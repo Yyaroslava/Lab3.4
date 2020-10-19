@@ -15,8 +15,8 @@ int main()
     cout << "a = "; cin >> a;
     cout << "b = "; cin >> b;
     // розгалуження в повній формі  
-    if (y <= 0 && x >=-a && x <= 0 && y >= -b && y <= sqrt(R * R - x * x) ||
-        y <= b && y >= 0 &&  x <= a && x >= sqrt(R * R - y * y)) {
+    if (y <= 0 && x >=-a && x <= 0 && y >= -b && x*x+y*y<=R*R ||
+        y <= b && y >= 0 &&  x <= a && x*x+y*y>=R*R) {
         cout << "yes" << endl;
     }
     else {
